@@ -1,0 +1,10 @@
+<p>
+  evenement button works!
+  <button (click)="handleClick()">Console log</button>
+</p>
+
+<p (mouseover)="mouseClick($event,'over')" (mouseout)="mouseClick($event,'out')" [hidden]="isHidden">
+  MOCKS !
+
+</p>
+<button (click)="eventClick($event)">EVENT log</button>

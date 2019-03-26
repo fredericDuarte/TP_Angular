@@ -1,0 +1,9 @@
+/bin/
+**/*.class
+.classpath
+.project
+/target/
+.settings/
+/docs/
+/node_modules/
+.idea

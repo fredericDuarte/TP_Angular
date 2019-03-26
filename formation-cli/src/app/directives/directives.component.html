@@ -1,0 +1,47 @@
+<div *ngIf="isDisplay; else title">
+  <p>Formation Angular</p>
+</div>
+<ng-template #title><p>Nom de la formation</p></ng-template>
+
+
+<div *ngIf="isClick">
+  <p>Nom : {{ formation.nom}} </p>
+  <p>Description : {{ formation.description}} </p>
+</div>
+
+<button (click)="eventClick($event)"> Abracadabraaa</button>
+
+<div [ngSwitch]="formations.length">
+  <p *ngSwitchCase="0">Aucune formation disponibles</p>
+  <p *ngSwitchCase="1">Une formation disponible : </p>
+  <p *ngSwitchDefault>Formations disponibles :</p>
+</div>
+Style
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f; last as l,even as e">
+    <p [style.color]="getColorByElement(f,l)" [style.background]="getColorByBack(e)">
+
+      {{i}} - {{ formation.nom }}
+    </p>
+  </li>
+</ul>
+NgStyle
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f; last as l,even as e">
+    <p [ngStyle]="{ color:getColorByElement(f,l) , background : getColorByBack(e) }">
+
+      {{i}} - {{ formation.nom }}
+    </p>
+  </li>
+</ul>
+NgClass
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f; last as l,even as e">
+    <p [ngClass]="{'sapin': isSapin(f,l), 'sapin-italic': isSapin(e)}">
+
+      {{i}} - {{ formation.nom }}
+    </p>
+  </li>
+</ul>
+
+
