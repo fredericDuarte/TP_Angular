@@ -1,0 +1,15 @@
+<div style="margin: 20px; text-align: center;">
+
+
+  <label for="mc">Formulaire de saisie</label>
+
+  <input [value]="title"  (change)="handleChange($event)"
+    type="text"
+    name="mc"
+    id="mc"
+
+  ><br>
+  <button (click)="addClick()">Click me</button>
+  <input type="reset" value="Reset" (click)="resetClick()" />
+
+</div>
