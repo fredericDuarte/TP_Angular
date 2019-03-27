@@ -13,11 +13,19 @@ export class TodoContainerComponent implements OnInit {
 
   addEvent(event) {
 
-   this.todoList.push( new Todo(event, false ));
-    console.log( "container event"  + event);
+    this.todoList.push(new Todo(event, false));
+    console.log("container event" + event);
   }
 
-  constructor() { }
+
+  resetEvent(event) {
+
+    this.todoList = [];
+    console.log("reset event" + event);
+  }
+
+  constructor() {
+  }
 
 
   ngOnInit() {

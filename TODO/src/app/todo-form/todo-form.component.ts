@@ -13,6 +13,10 @@ export class TodoFormComponent implements OnInit {
   @Output()
   newTodo = new EventEmitter<string>();
 
+
+  @Output()
+  initTodo = new EventEmitter<string>();
+
   constructor() {
   }
 
@@ -29,7 +33,8 @@ export class TodoFormComponent implements OnInit {
   }
 
   resetClick() {
-    this.title ='';
+     this.initTodo.emit("reset");
+
   }
 
   ngOnInit() {
