@@ -10,6 +10,10 @@ export class PipesComponent implements OnInit {
 
   formations: Array<Formation> = [];
 
+  asyncPromise: any = new Promise(resolve => {
+    setTimeout(() => resolve(this.formations), 1500);
+  });
+
   getColorByElement(isFirst: boolean = false, isLast: boolean = false) {
 
     return isFirst ? 'red' : isLast ? 'green' : 'black';

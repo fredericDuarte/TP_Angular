@@ -5,3 +5,14 @@
 .sapin-italic {
   font-style: italic;
 }
+
+.sapin_first {
+  color: red;
+  background: blue;
+}
+
+.sapin_last {
+  color: yellow;
+  background: blue;
+}
+

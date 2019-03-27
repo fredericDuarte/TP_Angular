@@ -9,6 +9,10 @@ import { EvenementComponent } from './evenement/evenement.component';
 import { VariableComponent } from './variable/variable.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { FormationItemComponent } from './formation-item/formation-item.component';
+import { PlaygroundComponent } from './playground/playground.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { LifecycleOnchangeComponent } from './lifecycle-onchange/lifecycle-onchange.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { PipesComponent } from './pipes/pipes.component';
     EvenementComponent,
     VariableComponent,
     DirectivesComponent,
-    PipesComponent
+    PipesComponent,
+    FormationItemComponent,
+    PlaygroundComponent,
+    LifecycleComponent,
+    LifecycleOnchangeComponent
   ],
   imports: [
     BrowserModule

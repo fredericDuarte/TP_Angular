@@ -44,4 +44,15 @@ NgClass
   </li>
 </ul>
 
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f; last as l,even as e">
+    <p [ngClass]="{'sapin_first': f, 'sapin_last': l,'sapin-italic':e }">
+
+      {{i}} - {{ formation.nom }}
+    </p>
+  </li>
+</ul>
+
+
+
 
