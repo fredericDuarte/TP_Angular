@@ -1,6 +1,6 @@
-import data from './film.json';
+import data from '../data/film.json';
 
-class Film {
+export class Film {
 
     title: string;
     releasedate: string;
@@ -8,12 +8,13 @@ class Film {
     poster: string;
     location: string;
     rating: string;
-    genre: Genre[];
-    actors: Actor[];
+    genre: string[];
+    directors: string;
+    actors: string[];
     trailers: Trailer[];
 
     constructor(title: string, releasedate: string, studio: string, poster: string, location: string,
-                rating: string, genre: Genre[], actors: Actor[], trailers: Trailer[]) {
+                rating: string, genre: string[],   directors: string, actors: string[], trailers: Trailer[]) {
         this.title = title;
         this.releasedate = releasedate;
         this.studio = studio;
@@ -21,6 +22,7 @@ class Film {
         this.location = location;
         this.rating = rating;
         this.genre = genre;
+        this.directors= directors;
         this.actors = actors;
         this.trailers = trailers;
 
@@ -28,29 +30,7 @@ class Film {
 
 }
 
-class Actor {
-
-    firstName: string;
-    lastName: string;
-
-
-    constructor(firstName: string, lastName: string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-}
-
-class Genre {
-
-    cat: string;
-
-    constructor(cat: string) {
-        this.cat = cat;
-    }
-
-}
-
-class Trailer {
+export class Trailer {
 
     postdate: string;
     url: string;
@@ -70,7 +50,8 @@ class Trailer {
 
 }
 
-function getFilm() {
+
+export function getFilm() {
     return data.map((item: any) => new Film(
         item.title,
         item.releasedate,
@@ -78,9 +59,15 @@ function getFilm() {
         item.poster,
         item.location,
         item.rating,
-        item.genre.map((item: any) => new Genre(item.cat)),
-        item.actors.map((item: any) => new Actor(item.firstName, item.lastName)),
+        item.genre,
+        item.directors,
+        item.actors,
         item.trailers.map((item: any) => new Trailer(item.postdate, item.url, item.type, item.exclusive, item.hd))
     ));
 }
+
+console.log("File JSon = " + data);
+console.log(getFilm);
+
+
 
