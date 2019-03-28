@@ -1,14 +1,15 @@
 import { Formation } from "../model/Formation";
+import FormationApi  from "./FormationApi";
+import {Injectable} from '@angular/core';
 
+@Injectable()
 export default class FormationService {
 
-  getFormations(): Array<Formation> {
+constructor(private formationApi: FormationApi) {}
 
-    return [
-      new Formation('module JSP', "le super angular 6"),
-      new Formation('module Spring', "JS  mouaiss"),
-      new Formation('module Maven', "a améliorer")
-    ]
+  getFormations(): Promise<Array<Formation>> {
+
+   return this.formationApi.fetchFormation();
   }
 
 }

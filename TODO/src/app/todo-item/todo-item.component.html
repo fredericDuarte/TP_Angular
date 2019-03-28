@@ -1,0 +1,10 @@
+<div>
+
+
+ <!--  <h4 [ngStyle]="{ 'text-decoration': getTextDecoration() }" > -->
+
+  <h4  [ngClass]="{'barre': todo.isDone }" >
+    {{todo.title | uppercase}}
+    <input type="checkbox" [checked]="todo.isDone" (click)="checkClick()">
+  </h4>
+</div>
