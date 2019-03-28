@@ -12,4 +12,14 @@ constructor(private todoApi: TodoApi) {}
    return this.todoApi.fetchTodo();
   }
 
+  addTodos(todo:Todo) {
+
+    return this.todoApi.fetchAddTodo(todo);
+  }
+
+  delTodos(): Promise<Array<Todo>> {
+
+    return this.todoApi.fetchDelTodo();
+  } 
+
 }
