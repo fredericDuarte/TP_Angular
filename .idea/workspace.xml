@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ce093cf-6d4c-483a-b9e6-07cf455db155" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TODO/src/app/TodoServices/TodoApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TODO/src/app/TodoServices/TodoApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO/src/app/TodoServices/TodoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TODO/src/app/TodoServices/TodoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO/src/app/todo-container/todo-container.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TODO/src/app/todo-container/todo-container.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="5ce093cf-6d4c-483a-b9e6-07cf455db155" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +153,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553775253953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553775418920" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -192,12 +188,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553674474565</updated>
-      <workItem from="1553674478445" duration="16135000" />
+      <workItem from="1553674478445" duration="16299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16135000" />
+    <option name="totallyTimeSpent" value="16299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="0" width="1188" height="920" extended-state="0" />
