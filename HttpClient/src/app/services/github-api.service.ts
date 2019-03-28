@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpErrorResponse, HttpEvent, HttpHandler, HttpClient, HttpResponse} from "@angular/common/http";
 
 
 // const API_BASE_URL: string = 'https://api.github.com/';
-const API_BASE_URL: string = 'https://api.punkapi.com/v2/beers/';
+const API_BASE_URL: string = 'https://api.punkapi.com/v2/beers?page=2&per_page=80';
 
 
 const API_USERS: string = 'users/';
