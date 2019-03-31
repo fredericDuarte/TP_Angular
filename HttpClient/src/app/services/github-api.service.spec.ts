@@ -8,7 +8,7 @@ describe('GithubApiService', () => {
   it('should be created', () => {
     const service: GithubApiService = TestBed.get(GithubApiService);
     expect(service).toBeTruthy();
-
+/*
     service.getUser('fredericDuarte')
       .subscribe((result:any) => {
         console.log('next');
@@ -18,7 +18,7 @@ describe('GithubApiService', () => {
         fail("Do not fail")
       }, () => {
         console.log('complete');
-      });
+      }); */
   });
 });
 

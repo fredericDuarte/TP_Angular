@@ -6,14 +6,21 @@
     Exercice 5 : HTTP
   </h1>
 </div>
-
+<!--
 <h2>Github // Punkapi</h2>
-<h4> <!-- {{ gitUser() }} --></h4>
 <h4>  {{ gitUser() }} </h4>
-
+<div *ngFor = "let data of results">
+  <p>id : {{data.id}}</p>
+  <p>Nom : {{data.name}}</p>
+</div>
+-->
 
 <h2>Param</h2>
-<h4><!-- {{ param() }} --></h4>
+<h4> {{ param() }} </h4>
+<div *ngFor = "let data2 of results2">
+  <p>id : {{data2.id}}</p>
+  <p>Nom : {{data2.name}}</p>
+</div>
 
 
 <h2>Header</h2>
