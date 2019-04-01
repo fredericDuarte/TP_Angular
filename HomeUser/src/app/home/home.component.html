@@ -1,7 +1,6 @@
 
 <div>
-  <input type="text" id="login" name="login"/>
-  <button  (click)="navigateToLogin()"> Valider </button>
-
-
+  <label>Login</label>
+  <input type="text" id="login" name="login" [value]="idLogin"   (change) ='handleChange($event)'/>
+  <button  (click)="navigateToPage()"> Valider </button>
 </div>

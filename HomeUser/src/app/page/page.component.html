@@ -1,0 +1,29 @@
+<mat-tab-group>
+  <mat-tab label="Profil">
+    <img [src] = 'user.avatar_url'  width="80">
+    <h4>Login = {{ user.login}}  </h4>
+    <h4> Type = {{ user.type}}  </h4>
+
+    <h4> Company = {{ user.company}}  </h4>
+    <h4> Bio = {{ user.bio}}   </h4>
+
+    <h4> Locations = {{ user.location}}  </h4>
+  </mat-tab>
+  <mat-tab label="Followers">
+    <p *ngFor="let todo of userList; index as i">
+      {{i}} - {{ todo.login}}
+    </p>
+
+  </mat-tab>
+  <mat-tab label="Repo">
+    <p *ngFor="let todo2 of userList2; index as i">
+      {{i}} - {{ todo2.name}}
+    </p>
+  </mat-tab>
+
+</mat-tab-group>
+
+
+
+
+
